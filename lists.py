@@ -19,7 +19,7 @@ def print_list(items):
 
     for item in items:
 
-        print("the wrong thing")
+        print(item)
 
 
 def long_words(words):
@@ -42,10 +42,10 @@ def long_words(words):
 
     for word in words:
 
-        if len(word) > 4
-        lengthy_words.append(word)
+        if len(word) > 4:
+            lengthy_words.append(word)
 
-    return [lengthy_words]
+    return lengthy_words
 
 
 def n_long_words(words, n):
@@ -66,10 +66,10 @@ def n_long_words(words, n):
 
     for word in words:
 
-        if len(word) > n
-        lengthy_words.append(word)
+        if len(word) > n:
+            lengthy_words.append(word)
 
-    return [lengthy_words]
+    return lengthy_words
 
 
 
@@ -182,7 +182,12 @@ def sum_numbers(numbers):
         0
     """
 
-    return None
+    added = 0
+    
+    for num in numbers:
+        added = added + num
+
+    return added
 
 
 def mult_numbers(numbers):
@@ -205,7 +210,16 @@ def mult_numbers(numbers):
         1
     """
 
-    return None
+    mult = 1
+
+    if numbers == []:
+        return 1
+
+    else:
+        for num in numbers:
+            mult = mult * num
+
+        return mult
 
 
 def join_strings(words):
@@ -224,7 +238,12 @@ def join_strings(words):
         ''
     """
 
-    return "Not the right thing"
+    big_string = ''
+
+    for word in words:
+        big_string = big_string + word
+
+    return big_string
 
 
 def average(numbers):
@@ -244,9 +263,14 @@ def average(numbers):
     it's fine if this raises an error when given an empty list.
     (Think of the best way to handle an empty input list, though,
     a feel free to provide a good solution here.)
+
     """
 
-    return 0
+    if numbers == []:
+        return "Empty"
+
+    else:
+        return float((sum(numbers))/len(numbers))
 
 
 def join_strings_with_comma(words):
@@ -265,8 +289,9 @@ def join_strings_with_comma(words):
         >>> join_strings_with_comma(["Pretzel"])
         'Pretzel'
     """
+    
+    return 
 
-    return ""
 
 
 def reverse_list(items):
