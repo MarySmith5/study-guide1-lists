@@ -17,7 +17,9 @@ def print_list(items):
         9
     """
 
-    print("the wrong thing")
+    for item in items:
+
+        print("the wrong thing")
 
 
 def long_words(words):
@@ -36,8 +38,14 @@ def long_words(words):
         >>> long_words(["all", "are", "tiny"])
         []
     """
+    lengthy_words = []
 
-    return ['the wrong thing']
+    for word in words:
+
+        if len(word) > 4
+        lengthy_words.append(word)
+
+    return [lengthy_words]
 
 
 def n_long_words(words, n):
@@ -54,7 +62,15 @@ def n_long_words(words, n):
         ['apples', 'bananas']
     """
 
-    return ['the wrong thing']
+    lengthy_words = []
+
+    for word in words:
+
+        if len(word) > n
+        lengthy_words.append(word)
+
+    return [lengthy_words]
+
 
 
 def smallest_int(numbers):
@@ -74,7 +90,12 @@ def smallest_int(numbers):
         True
     """
 
-    return 100
+    if numbers == []:
+        return
+
+    else:
+        ascending_list = sorted(numbers)
+        return  ascending_list[0]
 
 
 def largest_int(numbers):
@@ -94,7 +115,13 @@ def largest_int(numbers):
         True
     """
 
-    return 0
+    if numbers == []:
+        return
+
+    else:
+        ascending_list = sorted(numbers)
+        return  ascending_list[-1]
+   
 
 
 def halvesies(numbers):
@@ -112,7 +139,13 @@ def halvesies(numbers):
         [0.5, 2.5]
     """
 
-    return []
+    nums_halved = []
+
+    for num in numbers:
+        half = float(num/2)
+        nums_halved.append(half)
+
+    return nums_halved
 
 
 def word_lengths(words):
@@ -124,7 +157,13 @@ def word_lengths(words):
         [5, 3, 5, 4]
     """
 
-    return []
+    lengths = []
+    
+    for word in words:
+        length = len(word)
+        lengths.append(length)
+
+    return lengths
 
 
 def sum_numbers(numbers):
