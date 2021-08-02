@@ -63,6 +63,91 @@ PART TWO:
     Dear Hacker Jane Hacks, I think you are amazing! Sincerely, Balloonicorn
 
 """
+def hello_world():
+    print("Hello World")
+
+
+def say_hi(name):
+    print(f'Hi {name}')
+
+
+def print_product(num1, num2):
+    print(num1 * num2)
+
+
+def repeat_string(word, num):
+    print(word * 3)
+
+
+def print_sign(num):
+    if num < 0:
+        print('Lower than 0')
+
+    elif num > 0:
+        print('Higher than 0')
+
+    else:
+        print('Zero')
+
+
+def is_divisible_by_three(num):
+    if num % 3 == 0:
+        return True
+
+    else:
+        return False
+
+
+def num_spaces(a_string):
+    space_counter = 0
+    for letter in a_string:
+        if letter == ' ':
+            space_counter += 1
+
+    return space_counter
+
+
+def total_meal_price(price, tax = .15):
+
+    return(price * (1 + tax))
+
+
+def sign_and_parity(num):
+    answer = ["Positive", "Even"]
+
+    if num < 0:
+        answer[0] = 'Negative'
+    elif num == 0:
+        answer[0] = 'Zero'
+
+    if num % 2 != 0:
+        if num == 0:
+            answer[1] = 'Undefined'
+        else:
+            answer[1] = 'Odd'
+
+    return(answer)
+
+
+def full_title(name, title = 'Engineer'):
+
+    return(f'{title} {name}')
+
+
+def write_letter(name, title, sender):
+
+    print(f"Dear {title} {name}, I think you are amazing! Sincerely, {sender}")
+
+
+
+
+
+
+
+
+
+
+
 
 ###############################################################################
 
